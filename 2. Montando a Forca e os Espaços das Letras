@@ -1,0 +1,37 @@
+2. Montando a Forca e os Espaços das Letras
+Representação da Palavra
+java
+public class Palavra {
+    private String palavraOculta;
+    private char[] letrasDescobertas;
+
+    public Palavra(String palavra) {
+        this.palavraOculta = palavra.toUpperCase();
+        this.letrasDescobertas = new char[palavra.length()];
+        for (int i = 0; i < letrasDescobertas.length; i++) {
+            letrasDescobertas[i] = '_';
+        }
+    }
+
+    public boolean tentarLetra(char letra) {
+        boolean acertou = false;
+        for (int i = 0; i < palavraOculta.length(); i++) {
+            if (palavraOculta.charAt(i) == letra) {
+                letrasDescobertas[i] = letra;
+                acertou = true;
+            }
+        }
+        return acertou;
+    }
+
+    public boolean completa() {
+        return new String(letrasDescobertas).equals(palavraOculta);
+    }
+
+    public void exibir() {
+        for (char c : letrasDescobertas) {
+            System.out.print(c + " ");
+        }
+        System.out.println();
+    }
+}
