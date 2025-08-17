@@ -1,2 +1,15 @@
 🎯 Objetivo do Projeto
 Desenvolver um Jogo da Forca em Java, rodando no console, com lógica completa, menu interativo e estrutura modular. O jogo deve permitir que o usuário tente adivinhar uma palavra oculta, letra por letra, com número limitado de tentativas.
+
+📘Entendendo o Desafio
+Este projeto reforça conceitos como:
+
+🧩 Modularização em Java
+
+🎯 Manipulação de Strings e Arrays
+
+🔁 Estruturas de repetição e controle
+
+🧪 Testes manuais e validação de lógica
+
+🛠️ Interação com o usuário via console
