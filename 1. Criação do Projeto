@@ -1,0 +1,16 @@
+Estrutura de Diretórios
+Código
+forca-jogo/
+├── src/
+│   └── JogoDaForca.java
+├── README.md
+└── .gitignore
+Inicialização
+Crie o arquivo principal:
+
+java
+public class JogoDaForca {
+    public static void main(String[] args) {
+        Menu.iniciar();
+    }
+}
